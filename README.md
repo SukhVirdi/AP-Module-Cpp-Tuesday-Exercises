@@ -17,6 +17,4 @@ lower case.
 ```
 Please enter a word: MaDaM
 MaDaM converted to lower case is: madam
-
 ```
-
