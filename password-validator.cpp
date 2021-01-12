@@ -32,7 +32,7 @@ int login(string username, string password, account users[], int numUsers) {
 
 //driver code
 int main() {
-  //hardcoded user accounts that were provided in the ADA Doc
+  //hardcoded user account that was provided in the ADA Doc
   account users[] = {
     {
       "Mike",
