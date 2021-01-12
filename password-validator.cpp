@@ -1,7 +1,3 @@
-//https://repl.it/join/dbloerfi-sukhvirdi7
-//Started by getting user input and proceeding to write an if statement to check for the account, then a seperate function 
-//Finally i used the output of my login function to determine if the user succesfully logs in or not
-
 #include <iostream>
 
 using namespace std;
@@ -12,12 +8,13 @@ struct account {
   string name;
   string username;
   string password;
+
 };
 
 //function containing the username password and account users
-int login(string username, string password, account users[]) {
+int login(string username, string password, account users[], int numUsers) {
   //loop to check username/password matches the accounts in account users
-  for (int i = 0; i <= sizeof(users); i++) {
+  for (int i = 0; i <= numUsers; i++) {
     if (users[i].username == username) {
       //fetches the index if its found
       if (users[i].password == password) {
@@ -38,14 +35,10 @@ int main() {
       "mike@ada.ac",
       "AdaRocks"
     },
-    {
-      "Casper",
-      "Casper@ada.ac",
-      "AdaRocks"
-    }
   };
   string username, password;
   int loginUserId;
+  int numUsers;
 
   //retrieving user input (username and password)
   cout << "Username: ";
@@ -54,7 +47,7 @@ int main() {
   cin >> password;
 
   //checks whether the login user id matches 
-  loginUserId = login(username, password, users);
+  loginUserId = login(username, password, users, numUsers);
   if (loginUserId != -1) {
     cout << "\nWelcome " << users[loginUserId].name;
   } else {
