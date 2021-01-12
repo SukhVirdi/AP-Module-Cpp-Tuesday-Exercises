@@ -1,5 +1,9 @@
-#include <iostream>
+//PRIMER 4
+//https://repl.it/join/dbloerfi-sukhvirdi7
+//Started by getting user input and then proceeded to write an if statement to check whether the account existed, then a seperate function to analyse the login credentials etc.
+//Then I wanted to finish my outputting my login function to give the user confirmation on where there authentication has gone through or if its invalid
 
+#include <iostream>
 using namespace std;
 
 //account structure containg name, username and password
