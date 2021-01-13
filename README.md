@@ -1,5 +1,6 @@
 # AP-Module-Cpp-Tuesday-Exercises
-This repo is part of my 'Advanced Programming' module. It contains all of the Tuesday exercises / challenges.
+This repo is part of my 'Advanced Programming' module. It contains all of the Tuesday exercises / primers.
+
 ## Exercise 1: ReverseWord
 I created a simple C++ program that reverses a user entered word. The program prompts the user for a single word. Once entered, the program displays the word in reverse. 
 
