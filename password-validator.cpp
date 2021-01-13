@@ -1,61 +1,44 @@
-//PRIMER 4
 //https://repl.it/join/dbloerfi-sukhvirdi7
-//Started by getting user input and then proceeded to write an if statement to check whether the account existed, then a seperate function to analyse the login credentials etc.
-//Then I wanted to finish my outputting my login function to give the user confirmation on where there authentication has gone through or if its invalid
-
+//I thoroughly enjoyed completing this exercise as I firstly aimed in retrieving user input,then creating the structure and driver code containing the user accounts. Finally writing the if statement to check if the user input matches the existing user structure data.
 #include <iostream>
 using namespace std;
 
-//account structure containg name, username and password
-struct account {
-  //name is added as when you successfuly login it in greets you with ur account name 
-  string name;
+//account structure containg first name, username and password
+struct User {
+  string firstName;
   string username;
   string password;
-
 };
-
-//function containing the username password and account users
-int login(string username, string password, account users[], int numUsers) {
-  //loop to check username/password matches the accounts in account users
-  for (int i = 0; i <= numUsers; i++) {
-    if (users[i].username == username) {
-      //fetches the index if its found
-      if (users[i].password == password) {
-        return i; 
-      }
-    }
-  }
-  //for an incorrect login it returns -1
-  return -1;
-}
 
 //driver code
 int main() {
+  string userName;
+  string userPassword;
   //hardcoded user account that was provided in the ADA Doc
-  account users[] = {
-    {
-      "Mike",
-      "mike@ada.ac",
-      "AdaRocks"
-    },
+  User mike = {
+    "Mike",
+    "mike@ada.ac.uk",
+    "AdaRocks"
   };
-  string username, password;
-  int loginUserId;
-  int numUsers;
-
+  User casper = {
+    "Casper",
+    "casper@ada.ac.uk",
+    "AdaRocks"
+  };
   //retrieving user input (username and password)
   cout << "Username: ";
-  cin >> username;
+  cin >> userName;
   cout << "Password: ";
-  cin >> password;
+  cin >> userPassword;
+  //if statement to check if the user login matches the exists data
+  if (userName == mike.username && userPassword == mike.password) {
+    cout << "Welcome " << mike.firstName << "!\n";
 
-  //checks whether the login user id matches 
-  loginUserId = login(username, password, users, numUsers);
-  if (loginUserId != -1) {
-    cout << "\nWelcome " << users[loginUserId].name;
+  } else if (userName == casper.username && userPassword == casper.password) {
+    cout << "Welcome " << casper.firstName << "!\n";
+
   } else {
-    cout << "\nFailed to Authenticate";
+    cout << "Failed to Authenticate.\n" << '\n';
   }
   return 0;
 }
