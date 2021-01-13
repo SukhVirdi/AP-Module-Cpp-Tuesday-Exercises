@@ -1,7 +1,6 @@
 //https://repl.it/join/gkujafir-sukhvirdi7
 //I thought it would be much easier to reuse the code from one of my previous ada exercises that I undertook on one of the previous modules. The hardest part of this challenge involved correctly coding the loop that contained the logic.
 
-
 #include <algorithm>
 #include <iostream>
 using namespace std;
