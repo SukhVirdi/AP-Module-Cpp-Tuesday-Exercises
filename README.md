@@ -17,7 +17,7 @@ MaDaM converted to lower case is: madam
 ```
 
 ## Password Validator
-Passwords are validated by comparing a user-provided value with a known, stored value – passwords are either correct or not. Create a simple C++ program that validates user login credentials. This program prompts the user for a username and password and compare them against already known credentials. If the username provided exists and the password matches the program displays “Welcome” followed by the users first name. If the username does not exist or the password is incorrect a “Failed to Authenticate” message is shown.
+Passwords are validated by comparing a user-provided value with a known, stored value – passwords are either correct or not. I created a simple C++ program that validates user login credentials. This program prompts the user for a username and password and compare them against already known credentials. If the username provided exists and the password matches the program displays “Welcome” followed by the users first name. If the username does not exist or the password is incorrect a “Failed to Authenticate” message is shown.
 ```
 Username: mike@ada.ac
 Password: AdaRocks
