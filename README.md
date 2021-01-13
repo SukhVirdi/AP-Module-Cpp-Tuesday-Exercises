@@ -46,7 +46,7 @@ Password: AdaRocks
 Failed to Authenticate
 ```
 
-### Employee List Removal
+## Employee List Removal
 I created a simple C++ program that displays a list of employee names. Once finished, prompts the user for an employee name and remove it for the list; display the remaining names, each on its own line.
 ```
 There are 5 employees:
