@@ -16,6 +16,20 @@ Please enter a word: MaDaM
 MaDaM converted to lower case is: madam
 ```
 
+## Exercise 3: Palindrome Checker
+I created a simple C++ program that checks whether a word is a palindrome, i.e., a word that reads the same forwards or backwards. The program prompts the user for a single word. Once entered, the program displays a message indicating whether the word was a palindrome or not.
+```
+Please enter a word: Company
+Sorry, ‘Company’ is not a palindrome.
+
+Please enter a word: RaceCar
+Yes, ‘RaceCar’ is a palindrome
+
+Please enter a word: madam
+Yes, ‘madam’ is a palindrome
+```
+
+
 ## Password Validator
 Passwords are validated by comparing a user-provided value with a known, stored value – passwords are either correct or not. I created a simple C++ program that validates user login credentials. This program prompts the user for a username and password and compare them against already known credentials. If the username provided exists and the password matches the program displays “Welcome” followed by the users first name. If the username does not exist or the password is incorrect a “Failed to Authenticate” message is shown.
 ```
